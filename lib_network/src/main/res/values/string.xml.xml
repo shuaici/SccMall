@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="net_not_connected">发送请求失败，请检查网络连接</string>
+    <string name="net_server_connected_error">连接服务器失败，请稍后重试</string>
+    <string name="net_server_error">服务器处理请求失败，请稍后重试</string>
+    <string name="net_server_param_error">应用数据出错，请刷新重试</string>
+    <string name="net_unknown_error">未知错误，请稍后重试</string>
+</resources>

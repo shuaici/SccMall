@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Login模块</string>
+    <string name="login_welcome_message">Hi，一起来玩呀</string>
+    <string name="login_digits">0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM</string>
+    <string name="login_input_account">请输入账号</string>
+    <string name="login_input_password">请输入密码</string>
+    <string name="login_login">登录</string>
+    <string name="login_registered">注册</string>
+    <string name="login_account_limit">登入帳戶應為4&#8211;20位字母或數字</string>
+    <string name="login_old_password_limit">原密碼至少為6個字符，區分大小寫</string>
+    <string name="login_verification_code">驗證碼</string>
+    <string name="login_invalid_security_code">驗證碼錯誤</string>
+    <string name="login_password_limit">帳戶密碼應為6&#8211;20位</string>
+    <string name="login_input_account_number_non">在本頁面輸入帳戶和密碼即可完成註冊</string>
+</resources>

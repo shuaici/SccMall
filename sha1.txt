@@ -1,0 +1,45 @@
+Microsoft Windows [版本 10.0.19042.1288]
+(c) Microsoft Corporation。保留所有权利。
+
+X:\SccMall>keytool -v -list -keystore X:\SccMall\app\sccmall.jks
+输入密钥库口令:
+密钥库类型: JKS
+密钥库提供方: SUN
+
+您的密钥库包含 1 个条目
+
+别名: scc
+创建日期: 2021-10-27
+条目类型: PrivateKeyEntry
+证书链长度: 1
+证书[1]:
+所有者: CN=Scc, OU=Scc, O=Scc, L=SH, ST=SH, C=CN
+发布者: CN=Scc, OU=Scc, O=Scc, L=SH, ST=SH, C=CN
+序列号: 1a53f1cc
+有效期为 Wed Oct 27 14:04:19 GMT+08:00 2021 至 Sun Oct 21 14:04:19 GMT+08:00 2046
+证书指纹:
+         MD5:  40:95:02:0E:9D:AA:E1:97:03:33:94:9D:B0:EB:18:68
+         SHA1: 1D:6F:83:DE:EC:2A:63:DC:17:05:51:CD:A4:24:9D:52:E7:01:4F:04
+         SHA256: 88:96:35:20:29:B5:22:B4:FA:C1:95:17:A9:6E:72:7A:F6:8D:43:6F:24:B5:74:77:0B:45:12:4C:8B:0F:02:17
+签名算法名称: SHA256withRSA
+主体公共密钥算法: 2048 位 RSA 密钥
+版本: 3
+
+扩展:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 21 FC 03 EF A7 51 2C 22   CD 0F A6 B9 15 7C A3 9E  !....Q,"........
+0010: 39 10 E8 6F                                        9..o
+]
+]
+
+
+
+*******************************************
+*******************************************
+
+
+
+X:\SccMall>

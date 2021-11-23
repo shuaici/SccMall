@@ -1,0 +1,62 @@
+def root = rootProject.ext
+if(root.isDebug)
+{
+    apply plugin: 'com.android.application'
+}else{
+    apply plugin: 'com.android.library'
+}
+apply plugin: 'dagger.hilt.android.plugin'
+android {
+    compileSdkVersion root.android.compileSdkVersion
+    buildFeatures {
+        viewBinding true
+    }
+    defaultConfig {
+        if(root.isDebug)
+        {
+            applicationId root.applicationid.webview
+        }
+        minSdkVersion root.android.minSdkVersion
+        targetSdkVersion root.android.targetSdkVersion
+        versionCode root.android.versionCode
+        versionName root.android.versionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+//        resourcePrefix "webview_"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets{
+        main{
+            if(root.isDebug)
+            {
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            }else{
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation project(':lib_common')
+    implementation 'com.google.dagger:hilt-android:2.40.1'
+    annotationProcessor 'com.google.dagger:hilt-compiler:2.40.1'
+    annotationProcessor root.libARouterCompiler
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

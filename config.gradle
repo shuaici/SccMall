@@ -1,0 +1,35 @@
+ext{
+    //组件独立调试开关, 每次更改值后要同步工程
+    isDebug = false
+    android = [
+            // 编译 SDK 版本
+            compileSdkVersion: 31,
+            // 最低兼容 Android 版本
+            minSdkVersion    : 21,
+            // 最高兼容 Android 版本
+            targetSdkVersion : 31,
+            // 当前版本编号
+            versionCode      : 1,
+            // 当前版本信息
+            versionName      : "1.0.0"
+    ]
+    applicationid = [
+            app:"com.scc.sccmall",
+            main:"com.scc.module.main",
+            webview:"com.scc.module.webview",
+            login:"com.scc.module.login",
+            collect:"com.scc.module.collect"
+    ]
+    dependencies = [
+            "appcompat"         :'androidx.appcompat:appcompat:1.2.0',
+            "material"          :'com.google.android.material:material:1.3.0',
+            "constraintlayout"  :'androidx.constraintlayout:constraintlayout:2.0.1',
+            "livedata"          :'androidx.lifecycle:lifecycle-livedata:2.4.0',
+            "viewmodel"         :'androidx.lifecycle:lifecycle-viewmodel:2.4.0',
+            "legacyv4"          :'androidx.legacy:legacy-support-v4:1.0.0',
+            "splashscreen"      :'androidx.core:core-splashscreen:1.0.0-alpha01'
+    ]
+    libARouter= 'com.alibaba:arouter-api:1.5.2'
+    libARouterCompiler = 'com.alibaba:arouter-compiler:1.5.2'
+    libGson = 'com.google.code.gson:gson:2.8.9'
+}

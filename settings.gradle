@@ -1,0 +1,12 @@
+rootProject.name = "SccMall"
+include ':app'
+include ':module_main'
+include ':lib_common'
+include ':lib_network'
+include ':lib_picture'
+include ':module_webview'
+include ':module_login'
+include ':lib_utils'
+include ':module_collect'
+include ':lib_componentbase'
+include ':lib_application'

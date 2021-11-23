@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+   >
+    <TextView
+        android:id="@+id/item_fragment_mine_tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_18"
+        />
+
+    <TextView
+        android:id="@+id/item_fragment_mine_tv_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_fragment_mine_tv_name"
+        android:layout_marginEnd="100dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        />
+    <Button
+        android:id="@+id/item_fargment_mine_btn_look"
+        android:layout_width="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/text_size_16"
+        android:text="@string/str_fragment_mine_look"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

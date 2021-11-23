@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ResourceName">
+
+    <TextView
+        android:id="@+id/login_tv_welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_welcome_message"
+        android:textSize="@dimen/text_size_32"
+        android:textColor="@color/color_theme"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/login_et_input_account"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:maxLength="20"
+        android:digits="@string/login_digits"
+        android:hint="@string/login_input_account"
+        android:layout_marginTop="@dimen/dimen_20"
+        app:layout_constraintTop_toBottomOf="@+id/login_tv_welcome_message"
+        app:layout_constraintLeft_toLeftOf="@+id/login_tv_welcome_message"
+
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/login_et_input_password"
+        android:layout_width="@dimen/dimens_300"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:maxLength="20"
+        android:hint="@string/login_input_password"
+        app:layout_constraintLeft_toLeftOf="@+id/login_et_input_account"
+        app:layout_constraintTop_toBottomOf="@+id/login_et_input_account"
+        android:digits="@string/login_digits"
+        android:inputType="textPassword"
+         />
+
+    <TextView
+        android:id="@+id/login_btn_account_registered"
+        android:layout_width="@dimen/dimen_106"
+        android:layout_height="@dimen/dimen_35"
+        android:background="@drawable/shape_solid_4_gray"
+        android:gravity="center"
+        android:text="@string/login_registered"
+        android:textColor="@color/color_82888D"
+        android:layout_marginTop="@dimen/dimen_15"
+        app:layout_constraintLeft_toLeftOf="@+id/login_et_input_password"
+        app:layout_constraintTop_toBottomOf="@+id/login_et_input_password"
+        android:textSize="@dimen/text_size_14"
+        />
+
+    <TextView
+        android:id="@+id/login_btn_account_login"
+        android:layout_width="@dimen/dimen_106"
+        android:layout_height="@dimen/dimen_35"
+        android:background="@drawable/shape_solid_4_blue"
+        android:gravity="center"
+        android:text="@string/login_login"
+        android:textColor="@color/color_white"
+        android:layout_marginStart="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_15"
+        app:layout_constraintLeft_toRightOf="@+id/login_btn_account_registered"
+        app:layout_constraintBottom_toBottomOf="@+id/login_btn_account_registered"
+        android:textSize="@dimen/text_size_14"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

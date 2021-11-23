@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+    <ImageView
+        android:id="@+id/item_fragment_home_iv_head"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:src="@mipmap/ibtn_bg2"/>
+    <TextView
+        android:id="@+id/item_fragment_home_tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/item_fragment_home_iv_head"
+        android:layout_marginTop="15dp"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/item_fragment_home_tv_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/item_fragment_home_iv_head"
+        android:layout_below="@id/item_fragment_home_tv_name"
+        android:layout_marginRight="100dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="就现在经济大环境而言，很不乐观，程序员的日子也很不好过。"
+        />
+
+
+</RelativeLayout>

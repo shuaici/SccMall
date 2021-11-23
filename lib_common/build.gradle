@@ -1,0 +1,54 @@
+plugins {
+    id 'com.android.library'
+}
+def root = rootProject.ext
+apply plugin: 'dagger.hilt.android.plugin'
+android {
+    compileSdkVersion root.android.compileSdkVersion
+    buildFeatures {
+        viewBinding true
+    }
+    defaultConfig {
+        minSdkVersion root.android.minSdkVersion
+        targetSdkVersion root.android.targetSdkVersion
+        versionCode root.android.versionCode
+        versionName root.android.versionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+//        resourcePrefix "common_"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    api root.dependencies.appcompat
+    api root.dependencies.material
+    api root.dependencies.constraintlayout
+    api root.dependencies.livedata
+    api root.dependencies.viewmodel
+    api root.dependencies.legacyv4
+    api root.dependencies.splashscreen
+    api root.libARouter
+
+    api project(":lib_application")
+    api project(":lib_network")
+    api project(":lib_utils")
+    api project(":lib_picture")
+    api project(":lib_componentbase")
+
+    implementation 'com.google.dagger:hilt-android:2.40.1'
+    annotationProcessor 'com.google.dagger:hilt-compiler:2.40.1'
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

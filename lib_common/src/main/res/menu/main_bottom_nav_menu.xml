@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/main_bnv_item_home"
+        android:icon="@drawable/main_ic_home"
+        android:title="@string/str_main_home"/>
+    <item android:id="@+id/main_bnv_item_addressbook"
+        android:icon="@drawable/main_ic_addressbook"
+        android:title="@string/str_main_addressbook"/>
+    <item android:id="@+id/main_bnv_item_search"
+        android:icon="@drawable/main_ic_search"
+        android:title="@string/str_main_search"/>
+    <item android:id="@+id/main_bnv_item_mine"
+        android:icon="@drawable/main_ic_mine"
+        android:title="@string/str_main_mine"/>
+</menu>

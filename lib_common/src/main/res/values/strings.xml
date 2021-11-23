@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SccMall</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="str_main_home">首页</string>
+    <string name="str_main_addressbook">通讯录</string>
+    <string name="str_main_search">发现</string>
+    <string name="str_main_mine">我的</string>
+    <string name="str_fragment_mine_about_me">关于我</string>
+    <string name="str_fragment_mine_look">看看去</string>
+    <string name="str_fragment_home_btn_contentdescription">你想干什么</string>
+    <string name="facebook_app_id">2992757927647074</string>
+    <string name="fb_login_protocol_scheme">fb2992757927647074</string>
+    <string name="str_splash_jump_over">跳过</string>
+</resources>

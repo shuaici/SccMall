@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:shape="rectangle"
+    tools:ignore="ResourceName">
+    <!-- 填充的颜色 gray_f6-->
+    <solid android:color="@color/transparent_black_400" />
+    <!-- 设置矩形的四个角为弧形 -->
+    <!-- android:radius 弧形的半径 -->
+    <corners android:radius="@dimen/dimen_50" />
+    <stroke android:width="@dimen/dimen_05" android:color="@android:color/transparent" />
+</shape>
